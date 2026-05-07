@@ -1,0 +1,27 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}
+
+.title {
+  font-size: $font-size-base;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  margin: 0;
+  padding-left: $space-1;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  
+  @include md {
+    flex-direction: row;
+    > * { flex: 1; }
+  }
+}

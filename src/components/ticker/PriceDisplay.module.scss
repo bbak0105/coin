@@ -1,0 +1,55 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.root {
+  @include flex-center;
+  gap: $space-4;
+  flex-wrap: wrap;
+}
+
+.price {
+  @include tabular-nums;
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+  letter-spacing: -0.02em;
+  transition: color $transition-fast;
+  line-height: 1.1;
+
+  @include lg {
+    font-size: $font-size-4xl;
+  }
+}
+
+.change {
+  @include flex-center;
+  @include tabular-nums;
+  gap: $space-1;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+}
+
+.changeArrow {
+  font-size: $font-size-sm;
+}
+
+.changeValue {
+  letter-spacing: -0.01em;
+}
+
+.positive {
+  color: $color-positive;
+}
+
+.negative {
+  color: $color-negative;
+}
+
+// 스켈레톤
+.skeleton {
+  display: inline-block;
+  height: 1em;
+  width: 200px;
+  border-radius: $border-radius-sm;
+  @include skeleton;
+}

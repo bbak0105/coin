@@ -1,0 +1,26 @@
+@use '@/styles/variables' as *;
+
+.root {
+  width: 100%;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  background: $color-bg-card;
+  border: 1px solid $color-border;
+  padding: $space-4;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 400px;
+
+  /* iOS WebView 100vh 버그 대응 */
+  @supports (height: 100dvh) {
+    height: 40dvh;
+    min-height: 350px;
+    max-height: 500px;
+  }
+
+  /* WebView 터치 스크롤 충돌 방지 */
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}

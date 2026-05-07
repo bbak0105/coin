@@ -1,0 +1,19 @@
+@use '@/styles/variables' as *;
+
+.root {
+  width: 100%;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 350px;
+
+  @supports (height: 100dvh) {
+    height: 35dvh;
+    min-height: 300px;
+    max-height: 450px;
+  }
+
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}

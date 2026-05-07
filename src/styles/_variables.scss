@@ -1,0 +1,106 @@
+// ============================================================
+// 색상 시스템
+// ============================================================
+$color-bg-primary: #0a0b0f;
+$color-bg-secondary: #111318;
+$color-bg-card: #161a24;
+$color-bg-card-hover: #1c2130;
+$color-border: rgba(255, 255, 255, 0.08);
+$color-border-accent: rgba(247, 147, 26, 0.4);
+
+// BTC 오렌지
+$color-btc: #f7931a;
+$color-btc-light: rgba(247, 147, 26, 0.15);
+$color-btc-glow: rgba(247, 147, 26, 0.3);
+
+// 자산 색상
+$color-gold: #ffd700;
+$color-gold-light: rgba(255, 215, 0, 0.15);
+$color-usd: #4caf82;
+$color-usd-light: rgba(76, 175, 130, 0.15);
+$color-fear-greed: #9b59b6;
+$color-fear-greed-light: rgba(155, 89, 182, 0.15);
+
+// 텍스트
+$color-text-primary: #f0f2f5;
+$color-text-secondary: #8b95a8;
+$color-text-muted: #4a5568;
+
+// 등락
+$color-positive: #26d88a;
+$color-positive-bg: rgba(38, 216, 138, 0.1);
+$color-negative: #ff4d6a;
+$color-negative-bg: rgba(255, 77, 106, 0.1);
+
+// 연결 상태
+$color-connected: #26d88a;
+$color-disconnected: #ff4d6a;
+$color-connecting: #f7c948;
+
+// ============================================================
+// 타이포그래피
+// ============================================================
+$font-family-base: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+$font-size-xs: 0.75rem;   // 12px
+$font-size-sm: 0.875rem;  // 14px
+$font-size-base: 1rem;    // 16px
+$font-size-lg: 1.125rem;  // 18px
+$font-size-xl: 1.25rem;   // 20px
+$font-size-2xl: 1.5rem;   // 24px
+$font-size-3xl: 2rem;     // 32px
+$font-size-4xl: 2.5rem;   // 40px
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// ============================================================
+// 간격 시스템
+// ============================================================
+$space-1: 0.25rem;   // 4px
+$space-2: 0.5rem;    // 8px
+$space-3: 0.75rem;   // 12px
+$space-4: 1rem;      // 16px
+$space-5: 1.25rem;   // 20px
+$space-6: 1.5rem;    // 24px
+$space-8: 2rem;      // 32px
+$space-10: 2.5rem;   // 40px
+$space-12: 3rem;     // 48px
+
+// ============================================================
+// 반응형 브레이크포인트
+// ============================================================
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+$bp-2xl: 1440px;
+
+// ============================================================
+// 그림자 / 효과
+// ============================================================
+$shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+$shadow-btc-glow: 0 0 20px rgba(247, 147, 26, 0.2);
+$shadow-positive: 0 0 12px rgba(38, 216, 138, 0.3);
+$shadow-negative: 0 0 12px rgba(255, 77, 106, 0.3);
+
+$border-radius-sm: 6px;
+$border-radius-md: 10px;
+$border-radius-lg: 16px;
+$border-radius-xl: 20px;
+
+// ============================================================
+// 트랜지션
+// ============================================================
+$transition-fast: 150ms ease;
+$transition-base: 250ms ease;
+$transition-slow: 400ms ease;
+
+// ============================================================
+// 레이아웃
+// ============================================================
+$header-height: 64px;
+$sidebar-width: 280px;

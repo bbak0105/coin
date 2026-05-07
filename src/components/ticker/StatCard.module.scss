@@ -1,0 +1,48 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.root {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  padding: $space-4 $space-5;
+  min-width: 0;
+  transition: all $transition-base;
+}
+
+.highlight {
+  border-color: $color-border-accent;
+  box-shadow: $shadow-btc-glow;
+}
+
+.label {
+  @include flex-center;
+  justify-content: flex-start;
+  gap: $space-2;
+  font-size: $font-size-xs;
+  color: $color-text-secondary;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.icon {
+  font-size: $font-size-sm;
+}
+
+.value {
+  @include tabular-nums;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  @include truncate;
+}
+
+.skeleton {
+  display: block;
+  height: 1.2em;
+  width: 120px;
+  border-radius: $border-radius-sm;
+  @include skeleton;
+}

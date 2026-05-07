@@ -1,0 +1,103 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.root {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  padding: $space-4;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    opacity: 0.8;
+  }
+}
+
+// 테마 색상
+.gold::before { background: $color-gold; }
+.usd::before { background: $color-usd; }
+.fearGreed::before { background: $color-fear-greed; }
+
+.header {
+  @include flex-between;
+  align-items: flex-start;
+}
+
+.titleArea {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+}
+
+.icon {
+  font-size: $font-size-lg;
+  @include flex-center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.gold .icon { color: $color-gold; background: $color-gold-light; }
+.usd .icon { color: $color-usd; background: $color-usd-light; }
+.fearGreed .icon { color: $color-fear-greed; background: $color-fear-greed-light; }
+
+.title {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: $font-size-xs;
+  color: $color-text-secondary;
+  display: block;
+}
+
+.badge {
+  @include tabular-nums;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-semibold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.positive { color: $color-positive; background: $color-positive-bg; }
+.negative { color: $color-negative; background: $color-negative-bg; }
+
+.valueArea {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.primaryValue {
+  @include tabular-nums;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+}
+
+.secondaryValue {
+  @include tabular-nums;
+  font-size: $font-size-xs;
+  color: $color-text-secondary;
+}
+
+.skeleton {
+  display: block;
+  height: 1.2em;
+  width: 100px;
+  border-radius: $border-radius-sm;
+  @include skeleton;
+}
