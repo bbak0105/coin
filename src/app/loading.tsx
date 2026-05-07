@@ -18,13 +18,6 @@ export default function Loading() {
           animation: 'spin 1s linear infinite',
         }}
       />
-      <style jsx>{`
-        @keyframes spin {
-          to {
-            transform: rotate(360deg);
-          }
-        }
-      `}</style>
     </div>
   )
 }
